@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Hii {{user.first_name}}
+
+please click on the below link 
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+
+if you think its not you, ignore this email.
+
+{% endautoescape %}
